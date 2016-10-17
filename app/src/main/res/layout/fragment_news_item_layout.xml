@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selectable_background">
+
+
+ <LinearLayout
+     android:layout_marginLeft="@dimen/activity_horizontal_margin"
+     android:layout_marginRight="@dimen/activity_horizontal_margin"
+     android:layout_marginBottom="@dimen/activity_vertical_margin"
+     android:layout_marginTop="@dimen/activity_vertical_margin"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content">
+     <ImageView
+         android:id="@+id/news_image"
+         android:layout_width="100dp"
+         android:layout_height="100dp"
+       />
+     
+ </LinearLayout>
+
+    
+    <LinearLayout
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/news_title"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="2"
+            android:text="我是新闻标题"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"/>
+        <TextView
+            android:textColor="#999999"
+            android:id="@+id/news_author"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是作者"/>
+        <TextView
+            android:textColor="#999999"
+            android:id="@+id/news_time"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是发布时间"/>
+
+    </LinearLayout>
+</LinearLayout>

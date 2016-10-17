@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ban.maopu">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="猫扑篮球"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.ban.Activity.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden">
+
+
+
+        </activity>
+
+        <activity
+            android:name="com.ban.Activity.RegisiterActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden">
+        </activity>
+        <activity
+
+            android:name="com.ban.Activity.NewsContentActivity"
+            android:theme="@style/AppTheme.MyNoActionBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden">
+
+        </activity>
+        <activity
+            android:name="com.ban.Activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ban.Activity.StartActivity"
+            android:theme="@style/AppTheme.MyNoActionBar">
+
+
+        </activity>
+
+    </application>
+
+</manifest>

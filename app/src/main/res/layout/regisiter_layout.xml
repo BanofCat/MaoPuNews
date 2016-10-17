@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:orientation="vertical"
+    tools:context="com.ban.Activity.RegisiterActivity">
+
+    <include
+        layout="@layout/standar_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_grey"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/head_portrait"
+                android:layout_width="250dp"
+                android:gravity="center_horizontal"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/start_picture"
+
+      />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/selectable_background"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/account"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:drawablePadding="@dimen/activity_horizontal_margin"
+                    android:hint="手机号"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:maxLines="1" />
+
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/password_icon"
+                    android:drawablePadding="@dimen/activity_horizontal_margin"
+                    android:hint="密码"
+                    android:inputType="textPassword"
+                    android:maxLength="25"
+                    android:maxLines="1" />
+
+                <EditText
+                    android:id="@+id/repeat_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/password_icon"
+                    android:drawablePadding="@dimen/activity_horizontal_margin"
+                    android:hint="重复密码密码"
+                    android:inputType="textPassword"
+                    android:maxLength="25"
+                    android:maxLines="1" />
+
+                <EditText
+                    android:id="@+id/student_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/student_no_logo"
+                    android:drawablePadding="@dimen/activity_horizontal_margin"
+                    android:hint="绑定学号"
+                    android:inputType="number"
+                    android:maxLength="25"
+                    android:maxLines="1" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_grey"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#0066ff"
+                    android:text="注册"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

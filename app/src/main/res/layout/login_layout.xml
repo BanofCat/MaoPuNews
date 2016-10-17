@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context="com.ban.Activity.LoginActivity"
+    android:background="@color/light_grey"
+ >
+
+<include layout="@layout/standar_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请登录您的猫扑账号："
+        android:textAlignment="center"
+        android:textColor="#666666"
+        android:textSize="18dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/selectable_background">
+        />
+        <EditText
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:id="@+id/account"
+            android:maxLength="11"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="登录名或手机号"/>
+
+        <EditText
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:id="@+id/password"
+            android:drawableLeft="@drawable/password_icon"
+            android:maxLength="25"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="密码"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@color/light_grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/login_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:background="#0066ff"/>
+    </LinearLayout>
+
+</LinearLayout>
